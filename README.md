@@ -23,7 +23,8 @@ In this project, you will:
 - **initialize** each variable to a value.
 - use Python **f-strings** (formatted strings) to display information.
 
-Important: <mark>Git add-commit-push **project.log**</mark> (along with other project files).
+## Important: Git add-commit-push **project.log** (along with other project files)
+
 ---
 
 ## Three Workflows
@@ -172,13 +173,13 @@ Change each occurrence to point to your GitHub account instead (spacing and capi
 - Right-click / Rename.
 - Follow conventions: name Python files in lower_snake_case, words joined with underscores, and using `.py` extension.
 
-2. Edit this README.md file to change the run command to call your file instead.
+1. Edit this README.md file to change the run command to call your file instead.
    Use CTRL+f to search for `app_yourname.py` and replace all occurrences exactly.
-3. Preview this README.md to make sure it still appears correctly.
+2. Preview this README.md to make sure it still appears correctly.
    - Find README.md in the VS Code Explorer window (top icon on the left)
    - Right-click / Preview
    - Fix any issues.
-4. Run the updated command to execute **your** Python script.
+3. Run the updated command to execute **your** Python script.
 
 ### Project Task 3. Implement Your Python File
 
@@ -203,7 +204,7 @@ Change each occurrence to point to your GitHub account instead (spacing and capi
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) with in a file.
 
-## Troubleshooting >>> or ...
+## Troubleshooting >>> or
 
 If you see something like this in your terminal: `>>>` or `...`
 You accidentally started Python interactive mode.
