@@ -49,19 +49,19 @@ MY_ANALYTICS_COMPANY: Final[str] = "DataFun Analytics"
 MY_EMPLOYEE_COUNT: Final[int] = 150
 
 # See the other file for examples.
-# TODO: Declare and initialize a string (str) variable of your choice below:
+# Declare and initialize a string (str) variable of your choice below:
 FAVORITE_COLOR: Final[str] = "Blue"
 
-# TODO: Declare and initialize an integer (int) variable of your choice below:
+# Declare and initialize an integer (int) variable of your choice below:
 YEAR_OF_HS_GRADUATION: Final[int] = 1994
 
-# TODO: Declare and initialize a float (float) variable of your choice below:
+# Declare and initialize a float (float) variable of your choice below:
 FAVORITE_IRRATIONAL_NUMBER: Final[float] = 3.14159
 
-# TODO: Declare and initialize a boolean (bool) variable of your choice (True or False) below:
+# Declare and initialize a boolean (bool) variable of your choice (True or False) below:
 RESIDENT_OF_MISSOURI: Final[bool] = True
 
-# TODO: Declare and initialize a list of strings (list[str]) variable of your choice below:
+# Declare and initialize a list of strings (list[str]) variable of your choice below:
 # REQ: Strings must be in quotes and items are separated by commas,
 # REQ: The list is wrapped in square brackets. (See the other file for examples.)
 
@@ -78,18 +78,19 @@ def get_summary() -> str:
 
     Returns: - a formatted multi-line string (starts with f and wrapped in triple quotes).
     """
-    # TODO: Create and return a multi-line f-string (triple-quoted) that includes
+    # Create and return a multi-line f-string (triple-quoted) that includes
     # all of the global variables you declared above, each on its own line,
-    # labeled clearly with descriptive text.
+    # labeled clearly   with descriptive text.
     # See the other file for an example. Remember to start the string with an f!
     summary: str = f"""
     Custom Information:
         Company name: {MY_ANALYTICS_COMPANY}
         Employee count: {MY_EMPLOYEE_COUNT}
-        TODO: Add your other global variables below:
-
-
-
+        Favorite color: {FAVORITE_COLOR}
+        Year of HS graduation: {YEAR_OF_HS_GRADUATION}
+        Favorite irrational number: {FAVORITE_IRRATIONAL_NUMBER}
+        Resident of Missouri: {RESIDENT_OF_MISSOURI}
+        Favorite vacation spots: {', '.join(FAVORITE_VACATIONS)}
 
 
     """
@@ -113,7 +114,7 @@ def get_statistics() -> str:
     # REQ: Vary ONE of the sample data values.
     # See how the statistics change when you do.
     # TODO: Change one of the values in the list below.
-    snowfall_inches: list[float] = [2.5, 3.5, 4.5, 5.5, 6.5]
+    snowfall_inches: list[float] = [2.5, 4.5, 5.5, 6.5, 12]
 
     # Calculate descriptive statistics below - see other file for examples.
 
@@ -123,24 +124,25 @@ def get_statistics() -> str:
     # Example : Calculate count of measurements.
     count: int = len(snowfall_inches)
 
-    # TODO: Calculate minimum and maximum snowfall (see other file for examples).
+    # Calculate minimum and maximum snowfall (see other file for examples).
+    minimum: float = min(snowfall_inches) if count > 0 else 0.0
+    maximum: float = max(snowfall_inches) if count > 0 else 0.0
 
     # Use the statistics module to calculate average.
     average: float = statistics.mean(snowfall_inches) if count > 0 else 0.0
 
-    # TODO: Use the statistics module to calculate standard deviation below:
+    # Use the statistics module to calculate standard deviation below:
 
     # Build a formatted multi-line string using f and triple quotes.
     summary: str = f"""
     Descriptive Statistics for Snowfall (inches):
         Total snowfall: {total:.2f} inches
         TODO: Add your count of measurements below:
-
-        TODO: Add your minimum and maximum snowfall below:
-
+        Count of measurements: {count}
+        Minimum snowfall: {minimum:.2f} inches
+        Maximum snowfall: {maximum:.2f} inches
         Average snowfall: {average:.2f} inches
-        TODO: Add your standard deviation below:
-
+        Standard deviation: {statistics.stdev(snowfall_inches):.2f} inches
     """
 
     LOG.info("Generated formatted multi-line SUMMARY string.")
