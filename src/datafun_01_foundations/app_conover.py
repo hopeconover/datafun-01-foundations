@@ -1,6 +1,6 @@
-"""app_case.py - Project script (example).
+"""app_conover.py - Project script (example).
 
-Author: Denise Case
+Author: Hope Conover
 Date: 2026-01
 
   Practice key Python skills related to:

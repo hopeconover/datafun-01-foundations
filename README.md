@@ -13,7 +13,7 @@ Then think about a good name to hold that value in code.
 4. A **string of characters (text)** (e.g. `city`, `company_name`, `analytic_specialty`)
 5. A **list of strings** (e.g., `skills`, `interests`, `favorite_teams`)
 
-Following the example ([`app_case.py`](./src/datafun_01_foundations/app_case.py)),
+Following the example ([`app_hopeconover.py`](./src/datafun_01_foundations/app_hopeconover.py)),
 decide on a name for each type of variable.
 
 In this project, you will:
@@ -114,8 +114,8 @@ git pull
 In the same VS Code terminal, run any Python source files:
 
 ```shell
-uv run python src/datafun_01_foundations/app_case.py
-uv run python src/datafun_01_foundations/app_yourname.py
+uv run python src/datafun_01_foundations/app_conover.py
+uv run python src/datafun_01_foundations/app_hopeconover.py
 ```
 
 If a command fails, verify:
