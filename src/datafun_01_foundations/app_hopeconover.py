@@ -50,20 +50,22 @@ MY_EMPLOYEE_COUNT: Final[int] = 150
 
 # See the other file for examples.
 # TODO: Declare and initialize a string (str) variable of your choice below:
-
+FAVORITE_COLOR: Final[str] = "Blue"
 
 # TODO: Declare and initialize an integer (int) variable of your choice below:
-
+YEAR_OF_HS_GRADUATION: Final[int] = 1994
 
 # TODO: Declare and initialize a float (float) variable of your choice below:
-
+FAVORITE_IRRATIONAL_NUMBER: Final[float] = 3.14159
 
 # TODO: Declare and initialize a boolean (bool) variable of your choice (True or False) below:
-
+RESIDENT_OF_MISSOURI: Final[bool] = True
 
 # TODO: Declare and initialize a list of strings (list[str]) variable of your choice below:
 # REQ: Strings must be in quotes and items are separated by commas,
 # REQ: The list is wrapped in square brackets. (See the other file for examples.)
+
+FAVORITE_VACATIONS: Final[list[str]] = ["Ireland", "Costa Rica", "NYC", "Miramar Beach"]
 
 
 # === DECLARE A FUNCTION TO FORMAT THE INFORMATION ===
